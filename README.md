@@ -20,6 +20,7 @@ This project completely decouples the machine learning inference engine from the
 
 ## 🌐 Live API Documentation (FastAPI & Render)
 The machine learning backend is currently live and deployed via Render. You can interact directly with the Swagger UI documentation and test the `POST` endpoints here:
+* **Deployment Link(FrontEnd UI) :- https://cancer-prediction-system-4s9vcpjsjcu8prmvwcdeqo.streamlit.app/
 * **Interactive API Docs (Swagger UI):** [https://cancer-prediction-system-4.onrender.com/docs](https://cancer-prediction-system-4.onrender.com/docs)
 * **Prediction Endpoint:** `https://cancer-prediction-system-4.onrender.com/docs#/default/predict_cancer_predict_post`
 
