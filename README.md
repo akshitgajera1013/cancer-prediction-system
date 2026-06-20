@@ -5,6 +5,15 @@
 [![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Render](https://img.shields.io/badge/Deployed_on-Render-46E3B7.svg)](https://render.com/)
 
+
+#UI
+![Output](images/1.png)
+
+![Output](images/2.png)
+
+![Output](images/3.png)
+
+
 An enterprise-grade, distributed AI microservice designed to predict breast cancer malignancy using digitized Fine Needle Aspirate (FNA) cytology data. 
 
 This project completely decouples the machine learning inference engine from the user interface. It utilizes a cloud-hosted **FastAPI** backend to serve the machine learning model and a deeply interactive, heavily animated **Streamlit** frontend to process inputs, visualize cytological deviations, and generate exportable medical artifacts.
