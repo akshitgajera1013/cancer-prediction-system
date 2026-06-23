@@ -4,6 +4,7 @@
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Render](https://img.shields.io/badge/Deployed_on-Render-46E3B7.svg)](https://render.com/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/akshit1013/cancer)
 
 
 #UI
@@ -24,6 +25,56 @@ The machine learning backend is currently live and deployed via Render. You can 
 * **Interactive API Docs (Swagger UI):** [https://cancer-prediction-system-4.onrender.com/docs](https://cancer-prediction-system-4.onrender.com/docs)
 * **Prediction Endpoint:** `https://cancer-prediction-system-4.onrender.com/docs#/default/predict_cancer_predict_post`
 
+
+
+🐳 Docker Support
+
+This project is fully containerized using Docker, enabling consistent deployment across local machines, cloud environments, and production servers.
+
+📦 Docker Image
+
+The application image is available on Docker Hub:
+
+     docker pull akshit1013/cancer:latest
+
+
+🔗 Docker Hub Repository
+
+Docker Hub:
+
+     akshit1013/cancer Docker Repository
+
+🚀 Run Using Docker
+After pulling the image, start a container using:
+
+     docker run -d -p 8501:8501 --name cancer_prediction_app akshit1013/cancer:latest
+
+Then open:
+
+     docker build -t cancer-prediction-system .
+
+▶️ Run Local Docker Container
+
+     docker run -d -p 8501:8501 cancer-prediction-system
+
+📋 Docker Features
+
+     ✅ Containerized Streamlit Application
+     ✅ Portable Deployment Across Platforms
+     ✅ Simplified Environment Management
+     ✅ Consistent Dependency Handling
+     ✅ Easy Cloud & Server Deployment
+     ✅ Docker Hub Image Distribution
+
+
+🖼️ Docker Hub Deployment
+
+The project image has been successfully built, containerized, and published to Docker Hub.
+
+     Repository: akshit1013/cancer
+     Image Size: ~332 MB
+     Status: Public
+
 ## ✨ Core Architecture & Features
 
 * 📡 **Distributed Microservice:** The frontend operates independently from the heavy ML dependencies, communicating securely via REST API `POST` requests to the live FastAPI inference endpoint.
@@ -31,6 +82,7 @@ The machine learning backend is currently live and deployed via Render. You can 
 * 📊 **Macro Cellular Analytics:** Generates dynamic, real-time Radar Charts and Deviation Bar Graphs comparing the inputted tumor profile against baseline benign physiological markers.
 * 🎨 **Immersive Animated UI:** Features a custom CSS "Medical Neural" theme with glassmorphism panels, cellular floating particle animations, and pulsing diagnostic alert cards.
 * 💾 **Clinical Telemetry Export:** Allows users to download session payloads, raw JSON API responses, and structured CSV reports of the diagnostic session.
+* 🐳 **Dockerized Deployment:** Packaged as a portable Docker container and published on Docker Hub for quick deployment and reproducible environments.
 
 ## 🏗️ Repository Structure
 All application logic, APIs, and model artifacts are maintained in a streamlined, flat directory architecture:
